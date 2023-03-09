@@ -1,2 +1,2 @@
-#!/bin/bash
-chown betty:hello $(stat -c %U hello | grep guillaume) hello
+/bin/bash
+[ $(id -u) -eq 1000 ] && [ -O hello ] && chown betty hello
