@@ -1,2 +1,3 @@
 #!/bin/bash
-[ $(id -u) -eq 1000 ] && [ -O hello ] && chown betty hello
+if [ $(id -u) -eq 1000 ]; then if [ $(stat -c %U hello) = "guillaume" ]; then chown betty hello; fi; fi;
+
