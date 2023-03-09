@@ -1,2 +1,2 @@
-/bin/bash
+#!/bin/bash
 [ $(id -u) -eq 1000 ] && [ -O hello ] && chown betty hello
