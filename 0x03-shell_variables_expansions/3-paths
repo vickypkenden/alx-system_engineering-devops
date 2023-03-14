@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "$PATH" | tr ':' '\n' | wc -l | awk '{$1=$1};1'
